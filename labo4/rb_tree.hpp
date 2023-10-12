@@ -23,7 +23,7 @@ struct Node
 class Red_Black_Tree
 {
 private:
-    Node *root;
+    Node *root; //puntero a nodo root
     int _size;
     Node *NIL;
 
@@ -55,6 +55,11 @@ public:
     // Constructor
     Red_Black_Tree();
     Red_Black_Tree(PCB *, int);
+
+    //Get root con puntero nodo
+    Node* GetRoot(){
+        return root;
+    }
 
     // Search
     Node *Search(PCB, Node *);
