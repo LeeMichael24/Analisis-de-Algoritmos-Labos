@@ -4,6 +4,14 @@ using namespace std;
 
 enum order {IN,PRE,POST};
 
+typedef struct Batallion {
+    string code;
+    int id;
+    int manpower;
+    int armoredEquipment;
+    double budget;
+} data;
+
 typedef struct node {
     //struct node* parent;
     int data;
